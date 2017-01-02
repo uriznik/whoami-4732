@@ -5,7 +5,7 @@ var port = process.env.PORT || 8080;
 
 var uaSoftware = /^[^\s]*\s\(([^)]*)\)/;
 
-app.get('/', function (req, res) {
+app.get('/api/whoami', function (req, res) {
 	var language = req.headers["accept-language"];
 	var ua = req.headers["user-agent"];
 
